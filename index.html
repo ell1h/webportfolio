@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>el</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="" class="logo">
+                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link">about me</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#skills" class="menu-link">skills</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#education" class="menu-link">education</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects" class="menu-link">projects</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacts" class="menu-link">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about-me" id="about">
+            <div class="container">
+                <div class="all-info">
+                    <div class="my-info">
+                    <h1 class="name">Elvira Bocharova</h1>
+                    <h2 class="profession">Beginning graphic designer</h2>
+                </div>
+                <div class="exp-info">
+                    <p>I’m currently studying graphic design at the Saint-Petersburg state University of industrial technologies and design. I’ve already finished 2 years if education in sotial media design direction. Besides of regular tasks I also take part in the scientific conferences, besause I’m really interested in this field and want to develop my skills and expend my knowledge.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="all-skills">
+                    <div class="first-skills">
+                        <h1 class="title">Skills</h1>
+                        <div class="languages">
+                            <h2 class="eng-lang"> English – B2</h2>
+                            <h2 class="rus-lang">Russian – native</h2>
+                        </div>
+                    </div>
+                    <div class="secnd-skills">
+                        <div class="ux-ui">
+                            <h2>UX/UI Design</h2>
+                            <p>Adobe Illustrator, Sketchbook, Figma, Wireframing, User Research</p>
+                        </div>
+                        <div class="print">
+                            <h2>Print design</h2>
+                            <p>CMYK, preparing for printing</p>
+                        </div>
+                    </div>
+                    <div class="third-skills">
+                        <div class="front">
+                            <h2>Frontend Development</h2>
+                            <p>Visual Studio Code, HTML, CSS</p>
+                        </div>
+                        <div class="animation">
+                            <h2>Animation</h2>
+                            <p>Adobe After Effects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="education" id="education">
+            <div class="container">
+                <div class="edu-background">
+                    <h1 class="title">Education</h1>
+                    <div class="first-edu">
+                        <h2>2024 – present</h2>
+                        <p>Bachelor's degree of 4 years in Saint-Petersburg University of industrial technologies and design, Institute of graphic design, Social network design direction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="projects-header">
+                    <h1>Projects</h1>
+                    <ul class="filters">
+                       <li class="filter-item active" data-filter="all">all</li>
+                       <li class="filter-item" data-filter="animation">animation</li>
+                       <li class="filter-item" data-filter="ux-ui">UX/UI</li>
+                       <li class="filter-item" data-filter="identity">identity</li>
+                       <li class="filter-item" data-filter="frontend">frontend</li>
+                       <li class="filter-item" data-filter="posters">posters</li>
+                    </ul>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="posters">
+                       <img src="images/brandposter.jpg" alt="Brand posters" class="project-img">
+                       <a href="project8.html" class="project-title">Brand posters</a>
+                       <p class="project-date">May 2026</p>
+                    </div>
+                    <div class="project-card" data-category="animation posters">
+                       <img src="images/posters3d.jpg" alt="3D posters animation" class="project-img">
+                       <a href="project5.html" class="project-title">3D posters animation</a>
+                       <p class="project-date">November 2025</p>
+                    </div>
+                    <div class="project-card" data-category="animation posters">
+                       <img src="images/poster.jpg" alt="Posters animation" class="project-img">
+                       <a href="project4.html" class="project-title">Posters animation</a>
+                       <p class="project-date">November 2025</p>
+                    </div>
+                    <div class="project-card" data-category="animation">
+                       <img src="images/bicycle.jpg" alt="Bicycle animation" class="project-img">
+                       <a href="project1.html" class="project-title">Bicycle animation</a>
+                       <p class="project-date">June 2026</p>
+                    </div>
+                    <div class="project-card" data-category="identity">
+                       <img src="images/brandidentity.jpg" alt="Brand identity" class="project-img">
+                       <a href="project10.html" class="project-title">Brand identity</a>
+                       <p class="project-date">December 2025</p>
+                    </div>
+                    <div class="project-card" data-category="frontend">
+                       <img src="images/web.jpg" alt="Web-page development" class="project-img">
+                       <a href="project11.html" class="project-title">Web-page development</a>
+                       <p class="project-date">December 2025</p>
+                    </div>
+                    <div class="project-card" data-category="identity posters">
+                       <img src="images/eventidentity.jpg" alt="Event identity" class="project-img">
+                       <a href="project12.html" class="project-title">Event identity</a>
+                       <p class="project-date">October 2025</p>
+                    </div>
+                    <div class="project-card" data-category="animation">
+                       <img src="images/face.jpg" alt="Face emotions animation" class="project-img">
+                       <a href="project3.html" class="project-title">Face emotions animation</a>
+                       <p class="project-date">May 2026</p>
+                    </div>
+                    <div class="project-card" data-category="ux-ui frontend">
+                       <img src="images/app.jpg" alt="Mini app development" class="project-img">
+                       <a href="project9.html" class="project-title">Mini app development</a>
+                       <p class="project-date">July 2024</p>
+                    </div>
+                    <div class="project-card" data-category="animation">
+                       <img src="images/character.jpg" alt="Character animation" class="project-img">
+                       <a href="project6.html" class="project-title">Character animation</a>
+                       <p class="project-date">May 2026</p>
+                    </div>
+                    <div class="project-card" data-category="animation">
+                       <img src="images/tail.jpg" alt="Tail animation" class="project-img">
+                       <a href="project2.html" class="project-title">Tail animation</a>
+                       <p class="project-date">March 2026</p>
+                    </div>
+                    <div class="project-card" data-category="animation">
+                       <img src="images/game.jpg" alt="Game animation" class="project-img">
+                       <a href="project7.html" class="project-title">Game animation</a>
+                       <p class="project-date">September 2025</p>
+                    </div>
+                </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div class="all-contacts">
+                    <h1>Contacts</h1>
+                    <div class="contacts-info">
+                        <div class="phone">
+                            <h2>Phone</h2>
+                            <a href="tel:89214184117" class="phone-link">+7 (921) 418 41-17</a>
+                        </div>
+                        <div class="email">
+                            <h2>Email</h2>
+                            <p>elya206@icloud.com</p>
+                        </div>
+                        <div class="sotial-net">
+                            <h2>Social Networks</h2>
+                            <p>Telegram: @g1ddmn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <a href="" class="logo">
+                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+                </a>
+                <p>2026</p>
+            </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>

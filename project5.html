@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>3d posters animation</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
+                </a>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link">about me</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#skills" class="menu-link">skills</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#education" class="menu-link">education</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects" class="menu-link">projects</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contacts" class="menu-link">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="about-project">
+            <div class="container">
+                <div class="project-info">
+                    <h1 class="project-name">3D posters animation</h1>
+                    <p>In this project I created 3D posters' animation by using tools which are included in Adobe After Effects to attract more attention for them. (all animations are based on my vector art made in Adobe Illustrator!)</p>
+                </div>
+            </div>
+        </section>
+        <section class="stack">
+            <div class="container">
+                <div class="stack-info">
+                    <h1 class="title">Stack</h1>
+                    <p>Adobe After Effects, Adobe Illustrator</p>
+                </div>
+            </div>
+        </section>
+        <section class="project">
+            <div class="container">
+                <div class="project1">
+                    <h1 class="title">Project</h1>
+                    <div class="project-video">
+                        <video id="posters3d-video" class="project-img" loop muted playsinline width="100%">
+                            <source src="videos/posters3d.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <a href="index.html" class="logo">
+                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+                </a>
+                <p>2026</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const video = document.getElementById('posters3d-video');
+    video.muted = true;
+    video.play().catch(err => {
+        console.log('Автовоспроизведение заблокировано:', err);
+    });
+</script>
+</body>
+</html>
