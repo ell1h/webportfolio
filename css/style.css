@@ -701,4 +701,26 @@ body{
     .contacts-info h2{
         font-size: 20px;
     }
+    
+    .first-part{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .first-part > div{
+        width: 100%;
+    }
+    .first-part img{
+        width: 100%;
+    }
+
+    .prints{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .prints > div{
+        width: 100%;
+    }
+    .prints img{
+        width: 100%;
+    }
 }
