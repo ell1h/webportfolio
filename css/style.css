@@ -680,17 +680,18 @@ body{
     .footer-info p{
         font-size: 16px;
     }
-    .filters{
+    .projects-header .filters{
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
-        margin-left: 0; /* явно обнуляем, независимо от других правил */
-        width: 100%;
-        gap: 2px;
-        font-size: 11px; /* уменьшили ещё больше, чтобы все 6 слов влезли */
+        justify-content: flex-start;
+        margin: 0 !important;
+        padding: 0;
+        gap: 10px;
+        font-size: 13px;
     }
-    .filter-item{
-        flex-shrink: 1; /* разрешаем словам сжиматься, если не хватает места */
+    .projects-header .filter-item{
+        flex-shrink: 1;
+        min-width: 0;
         white-space: nowrap;
     }
     .eng-lang,
