@@ -587,11 +587,6 @@ body{
         gap: 20px;
         justify-content: space-between;
     }
-    .footer-info{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
 
     /* project case pages */
     .about-project{
@@ -629,7 +624,7 @@ body{
         gap: 12px;
     }
     .logo-img{
-        width: 60px;
+        width: 40px;
         height: auto;
     }
     .menu{
@@ -637,13 +632,13 @@ body{
         flex-wrap: nowrap;
     }
     .menu-link{
-        font-size: 13px;
+        font-size: 15px;
     }
     .menu-item{
         padding-left: 0;
     }
     .about-me{
-        padding: 100px 0 40px; /* было 30px 0 40px — подстрой под реальную высоту шапки */
+        padding: 120px 0 40px;
     }
     .name{
         font-size: 28px;
@@ -681,5 +676,17 @@ body{
         justify-content: space-between;
         align-items: center;
         text-align: left;
+    }
+    .footer-info p{
+        font-size: 16px;
+    }
+
+    /* уменьшенные подзаголовки — крупные h1-заголовки секций не трогаем */
+    .eng-lang,
+    .rus-lang,
+    .skills h2,
+    .first-edu h2,
+    .contacts-info h2{
+        font-size: 20px;
     }
 }
