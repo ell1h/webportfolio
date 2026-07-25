@@ -723,4 +723,29 @@ body{
     .prints img{
         width: 100%;
     }
+    .typography p{
+        display: inline;
+    }
+    .type-text{
+        margin-right: 6px;
+    }
+    .type{
+        margin-right: 20px;
+    }
+    .type-text:not(:first-child)::before{
+        content: "";
+        display: block;
+        margin-top: 12px;
+    }
+    .main-parts{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .main-parts > div{
+        width: 100%;
+    }
+    .main-parts img{
+        width: 100%;
+    }
 }
