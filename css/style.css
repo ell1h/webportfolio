@@ -628,17 +628,17 @@ body{
         height: auto;
     }
     .menu{
-        gap: 8px;
+        gap: 13px;
         flex-wrap: nowrap;
     }
     .menu-link{
-        font-size: 12px;
+        font-size: 13px;
     }
     .menu-item{
         padding-left: 0;
     }
     .about-me{
-        padding: 200px 0 40px;
+        padding: 170px 0 40px;
     }
     .name{
         font-size: 28px;
