@@ -638,7 +638,7 @@ body{
         padding-left: 0;
     }
     .about-me{
-        padding: 170px 0 40px;
+        padding: 160px 0 40px;
     }
     .name{
         font-size: 28px;
@@ -681,18 +681,19 @@ body{
         font-size: 16px;
     }
     .projects-header .filters{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         margin: 0 !important;
         padding: 0;
-        gap: 10px;
-        font-size: 13px;
+        gap: 4px;
+        font-size: 10px;
+        width: 100%;
     }
     .projects-header .filter-item{
-        flex-shrink: 1;
-        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
         white-space: nowrap;
+        text-align: center;
     }
     .eng-lang,
     .rus-lang,
