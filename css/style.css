@@ -680,20 +680,19 @@ body{
     .footer-info p{
         font-size: 16px;
     }
-    .projects-header .filters{
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+    .filters{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         margin: 0 !important;
         padding: 0;
-        gap: 4px;
-        font-size: 10px;
-        width: 100%;
+        gap: 10px;
+        font-size: 13px;
     }
-    .projects-header .filter-item{
-        overflow: hidden;
-        text-overflow: ellipsis;
+    .filter-item{
+        flex-shrink: 1;
+        min-width: 0;
         white-space: nowrap;
-        text-align: center;
     }
     .eng-lang,
     .rus-lang,
