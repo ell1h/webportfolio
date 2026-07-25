@@ -625,22 +625,25 @@ body{
         padding: 0 16px;
     }
     .nav{
-        flex-wrap: wrap;
-        gap: 16px;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+    .logo-img{
+        width: 60px;
+        height: auto;
     }
     .menu{
-        flex-wrap: wrap;
         gap: 12px;
-        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .menu-link{
+        font-size: 13px;
     }
     .menu-item{
         padding-left: 0;
     }
-    .header{
-        position: static; /* фикс. шапка на телефоне часто мешает — можно вернуть fixed, если не понравится */
-    }
     .about-me{
-        padding: 30px 0 40px;
+        padding: 100px 0 40px; /* было 30px 0 40px — подстрой под реальную высоту шапки */
     }
     .name{
         font-size: 28px;
@@ -667,5 +670,16 @@ body{
         flex-direction: column;
         align-items: flex-start;
         gap: 6px;
+    }
+    .ux-ui,
+    .front{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .footer-info{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
     }
 }
