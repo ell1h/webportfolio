@@ -632,7 +632,7 @@ body{
         flex-wrap: nowrap;
     }
     .menu-link{
-        font-size: 14px;
+        font-size: 13px;
     }
     .menu-item{
         padding-left: 0;
@@ -684,9 +684,14 @@ body{
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        margin-left: 0; /* явно обнуляем, независимо от других правил */
         width: 100%;
-        gap: 4px;
-        font-size: 12px;
+        gap: 2px;
+        font-size: 11px; /* уменьшили ещё больше, чтобы все 6 слов влезли */
+    }
+    .filter-item{
+        flex-shrink: 1; /* разрешаем словам сжиматься, если не хватает места */
+        white-space: nowrap;
     }
     .eng-lang,
     .rus-lang,
