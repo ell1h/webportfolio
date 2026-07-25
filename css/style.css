@@ -465,8 +465,8 @@ body{
 .prints img{
     width: 100%;
 }
-.internet-publications{
-    all: initial;
+.project-chapters h3.internet-publications{
+    margin: 20px 0 0;
 }
 
 
