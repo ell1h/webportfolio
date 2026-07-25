@@ -628,11 +628,11 @@ body{
         height: auto;
     }
     .menu{
-        gap: 13px;
+        gap: 15px;
         flex-wrap: nowrap;
     }
     .menu-link{
-        font-size: 13px;
+        font-size: 14px;
     }
     .menu-item{
         padding-left: 0;
@@ -680,8 +680,14 @@ body{
     .footer-info p{
         font-size: 16px;
     }
-
-    /* уменьшенные подзаголовки — крупные h1-заголовки секций не трогаем */
+    .filters{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 4px;
+        font-size: 12px;
+    }
     .eng-lang,
     .rus-lang,
     .skills h2,
