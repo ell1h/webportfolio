@@ -686,7 +686,7 @@ body{
         justify-content: flex-start;
         margin: 0 !important;
         padding: 0;
-        gap: 10px;
+        gap: 12px;
         font-size: 13px;
     }
     .filter-item{
