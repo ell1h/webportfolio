@@ -531,6 +531,9 @@ body{
 
 /* Планшеты вертикально / крупные телефоны */
 @media (max-width: 768px){
+    .menu-link{
+        font-size: 16px;
+    }
     .menu-item{
         padding-left: 40px;
     }
