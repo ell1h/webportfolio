@@ -6,7 +6,6 @@ function setLanguage(lang){
     document.querySelectorAll('[lang="ru"]').forEach(el => {
         el.style.display = lang === 'ru' ? '' : 'none';
     });
-    document.documentElement.setAttribute('lang', lang);
 }
 
 // язык браузера пользователя, например 'ru-RU' -> 'ru'
