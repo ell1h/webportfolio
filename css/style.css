@@ -557,6 +557,11 @@ body{
     .exp-info p{
         max-width: 100%;
     }
+    .ux-ui,
+    .front{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
     .title,
     .case-title,
     .stack-info h1,
@@ -618,7 +623,7 @@ body{
 
 
 /* Телефоны */
-@media (max-width: 480px){
+@media (max-width: 600px){
     .container{
         padding: 0 16px;
     }
