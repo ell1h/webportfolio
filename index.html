@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <title data-title-ru="Эльвира Бочарова · Портфолио графического дизайнера">Elvira Bocharova · Graphic Design Portfolio</title>
+    <script src="js/lang.js"></script>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>el</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="" class="logo">
-                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
-                </a>
-
+            <nav class="nav" aria-label="Main navigation" data-aria-ru="Основная навигация">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
                 <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#about" class="menu-link">
-                            <span lang="en">about me</span>
-                            <span lang="ru" style="display:none;">обо мне</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#skills" class="menu-link">
-                            <span lang="en">skills</span>
-                            <span lang="ru" style="display:none;">навыки</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#education" class="menu-link">
-                            <span lang="en">education</span>
-                            <span lang="ru" style="display:none;">образование</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#projects" class="menu-link">
-                            <span lang="en">projects</span>
-                            <span lang="ru" style="display:none;">проекты</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-link">
-                            <span lang="en">contacts</span>
-                            <span lang="ru" style="display:none;">контакты</span>
-                        </a>
-                    </li>
+                    <li><a href="#about" class="menu-link"><span data-language="en" lang="en">About</span><span data-language="ru" lang="ru">Обо мне</span></a></li>
+                    <li><a href="#skills" class="menu-link"><span data-language="en" lang="en">Skills</span><span data-language="ru" lang="ru">Навыки</span></a></li>
+                    <li><a href="#education" class="menu-link"><span data-language="en" lang="en">Education</span><span data-language="ru" lang="ru">Образование</span></a></li>
+                    <li><a href="#projects" class="menu-link"><span data-language="en" lang="en">Projects</span><span data-language="ru" lang="ru">Проекты</span></a></li>
+                    <li><a href="#contacts" class="menu-link"><span data-language="en" lang="en">Contact</span><span data-language="ru" lang="ru">Контакты</span></a></li>
                 </ul>
+                <div class="site-settings" hidden>
+                    <div class="language-switch" role="group" aria-label="Language" data-aria-ru="Язык">
+                        <button type="button" data-set-language="ru" aria-label="Russian" data-aria-ru="Русский" aria-pressed="false">RU</button>
+                        <button type="button" data-set-language="en" aria-label="English" data-aria-ru="Английский" aria-pressed="true">EN</button>
+                    </div>
+                    <button type="button" class="theme-switch" data-theme-switch aria-label="Dark theme" data-aria-ru="Тёмная тема" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -58,18 +39,19 @@
             <div class="container">
                 <div class="all-info">
                     <div class="my-info">
-                    <h1 class="name">Elvira Bocharova</h1>
-                    <h2 class="profession">
-                        <span lang="en">Beginning graphic designer</span>
-                        <span lang="ru" style="display:none;">Начинающий графический дизайнер</span>
-                    </h2>
-                </div>
-                <div class="exp-info">
-                    <p>
-                        <span lang="en">I’m currently studying graphic design at the Saint-Petersburg state University of industrial technologies and design. I’ve already finished 2 years if education in sotial media design direction. Besides of regular tasks I also take part in the scientific conferences, besause I’m really interested in this field and want to develop my skills and expend my knowledge.</span>
-                        <span lang="ru" style="display:none;">Сейчас я учусь на графического дизайнера в Санкт-Петербургском государственном университете промышленных технологий и дизайна. Я уже закончила 2 года обучения по направлению дизайна в социальных медиа. Помимо стандартных задач я также участвую в научных конференциях, потому что мне действительно интересна эта область, и я хочу развивать свои навыки и расширять знания.</span>
-                    </p>
-                </div>
+                        <h1 class="name"><span data-language="en" lang="en">Elvira Bocharova</span><span data-language="ru" lang="ru">Эльвира Бочарова</span></h1>
+                        <p class="profession">
+                            <span data-language="en" lang="en">Graphic designer</span>
+                            <span data-language="ru" lang="ru">Графический дизайнер</span>
+                        </p>
+                    </div>
+                    <div class="exp-info">
+                        <p>
+                            <span data-language="en" lang="en">I’ve completed two years of graphic design studies at Saint Petersburg State University of Industrial Technologies and Design, specialising in design for social media. I also take part in academic conferences to explore the field and develop my skills.</span>
+                            <span data-language="ru" lang="ru">Я учусь на графического дизайнера и уже окончила второй курс. Работаю над проектами для социальных сетей и участвую в научных конференциях.</span>
+                        </p>
+                        <a class="hero-link" href="#projects"><span data-language="en" lang="en">View projects</span><span data-language="ru" lang="ru">Смотреть проекты</span> <span aria-hidden="true">↓</span></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,55 +59,55 @@
             <div class="container">
                 <div class="all-skills">
                     <div class="first-skills">
-                        <h1 class="title">
-                            <span lang="en">Skills</span>
-                            <span lang="ru" style="display:none;">Навыки</span>
-                        </h1>
+                        <h2 class="title">
+                            <span data-language="en" lang="en">Skills</span>
+                            <span data-language="ru" lang="ru">Навыки</span>
+                        </h2>
                         <div class="languages">
                             <h2 class="eng-lang">
-                                <span lang="en">English – B2</span>
-                                <span lang="ru" style="display:none;">Английский – B2</span>
+                                <span data-language="en" lang="en">English – B2</span>
+                                <span data-language="ru" lang="ru">Английский — B2</span>
                             </h2>
                             <h2 class="rus-lang">
-                                <span lang="en">Russian – native</span>
-                                <span lang="ru" style="display:none;">Русский – родной</span>
+                                <span data-language="en" lang="en">Russian – native</span>
+                                <span data-language="ru" lang="ru">Русский — родной язык</span>
                             </h2>
                         </div>
                     </div>
                     <div class="secnd-skills">
                         <div class="ux-ui">
                             <h2>
-                                <span lang="en">UX/UI Design</span>
-                                <span lang="ru" style="display:none;">UX/UI дизайн</span>
+                                <span data-language="en" lang="en">UX/UI Design</span>
+                                <span data-language="ru" lang="ru">UX/UI-дизайн</span>
                             </h2>
                             <p>
-                                <span lang="en">Adobe Illustrator, Sketchbook, Figma, Wireframing, User Research</span>
-                                <span lang="ru" style="display:none;">Adobe Illustrator, Sketchbook, Figma, вайрфрейминг, пользовательские исследования</span>
+                                <span data-language="en" lang="en">Adobe Illustrator, Sketchbook, Figma, Wireframing, User Research</span>
+                                <span data-language="ru" lang="ru">Adobe Illustrator, Sketchbook, Figma, создание схем интерфейсов и исследования пользователей</span>
                             </p>
                         </div>
                         <div class="print">
                             <h2>
-                                <span lang="en">Print design</span>
-                                <span lang="ru" style="display:none;">Полиграфический дизайн</span>
+                                <span data-language="en" lang="en">Print design</span>
+                                <span data-language="ru" lang="ru">Дизайн для печати</span>
                             </h2>
                             <p>
-                                <span lang="en">CMYK, preparing for printing</span>
-                                <span lang="ru" style="display:none;">CMYK, подготовка к печати</span>
+                                <span data-language="en" lang="en">CMYK, preparing for printing</span>
+                                <span data-language="ru" lang="ru">Работа с CMYK и подготовка макетов к печати</span>
                             </p>
                         </div>
                     </div>
                     <div class="third-skills">
                         <div class="front">
                             <h2>
-                                <span lang="en">Frontend Development</span>
-                                <span lang="ru" style="display:none;">Фронтенд-разработка</span>
+                                <span data-language="en" lang="en">Frontend Development</span>
+                                <span data-language="ru" lang="ru">Фронтенд-разработка</span>
                             </h2>
                             <p>Visual Studio Code, HTML, CSS</p>
                         </div>
                         <div class="animation">
                             <h2>
-                                <span lang="en">Animation</span>
-                                <span lang="ru" style="display:none;">Анимация</span>
+                                <span data-language="en" lang="en">Animation</span>
+                                <span data-language="ru" lang="ru">Анимация</span>
                             </h2>
                             <p>Adobe After Effects</p>
                         </div>
@@ -136,18 +118,18 @@
         <section class="education" id="education">
             <div class="container">
                 <div class="edu-background">
-                    <h1 class="title">
-                        <span lang="en">Education</span>
-                        <span lang="ru" style="display:none;">Образование</span>
-                    </h1>
+                    <h2 class="title">
+                        <span data-language="en" lang="en">Education</span>
+                        <span data-language="ru" lang="ru">Образование</span>
+                    </h2>
                     <div class="first-edu">
                         <h2>
-                            <span lang="en">2024 – present</span>
-                            <span lang="ru" style="display:none;">2024 – настоящее время</span>
+                            <span data-language="en" lang="en">2024 – present</span>
+                            <span data-language="ru" lang="ru">С 2024 года</span>
                         </h2>
                         <p>
-                            <span lang="en">Bachelor's degree of 4 years in Saint-Petersburg University of industrial technologies and design, Institute of graphic design, Social network design direction</span>
-                            <span lang="ru" style="display:none;">Бакалавриат, 4 года обучения в Санкт-Петербургском государственном университете промышленных технологий и дизайна, Институт графического дизайна, направление «Дизайн социальных сетей»</span>
+                            <span data-language="en" lang="en">Four-year bachelor’s programme at the Institute of Graphic Design, Saint Petersburg State University of Industrial Technologies and Design, specialising in design for social media.</span>
+                            <span data-language="ru" lang="ru">Институт графического дизайна Санкт-Петербургского государственного университета промышленных технологий и дизайна. Бакалавриат по профилю «Дизайн социальных сетей», срок обучения — четыре года.</span>
                         </p>
                     </div>
                 </div>
@@ -156,214 +138,214 @@
         <section class="projects" id="projects">
             <div class="container">
                 <div class="projects-header">
-                    <h1>
-                        <span lang="en">Projects</span>
-                        <span lang="ru" style="display:none;">Проекты</span>
-                    </h1>
-                    <ul class="filters">
-                       <li class="filter-item active" data-filter="all">
-                            <span lang="en">all</span>
-                            <span lang="ru" style="display:none;">все</span>
-                       </li>
-                       <li class="filter-item" data-filter="animation">
-                            <span lang="en">animation</span>
-                            <span lang="ru" style="display:none;">анимация</span>
-                       </li>
-                       <li class="filter-item" data-filter="ux-ui">UX/UI</li>
-                       <li class="filter-item" data-filter="identity">
-                            <span lang="en">identity</span>
-                            <span lang="ru" style="display:none;">айдентика</span>
-                       </li>
-                       <li class="filter-item" data-filter="frontend">
-                            <span lang="en">frontend</span>
-                            <span lang="ru" style="display:none;">фронтенд</span>
-                       </li>
-                       <li class="filter-item" data-filter="posters">
-                            <span lang="en">posters</span>
-                            <span lang="ru" style="display:none;">постеры</span>
-                       </li>
+                    <h2>
+                        <span data-language="en" lang="en">Projects</span>
+                        <span data-language="ru" lang="ru">Проекты</span>
+                    </h2>
+                    <ul class="filters" aria-label="Filter projects" data-aria-ru="Фильтры проектов">
+                       <li><button type="button" class="filter-item" data-filter="all" aria-pressed="true"><span data-language="en" lang="en">all</span>
+                            <span data-language="ru" lang="ru">все</span></button></li>
+                       <li><button type="button" class="filter-item" data-filter="animation" aria-pressed="false"><span data-language="en" lang="en">animation</span>
+                            <span data-language="ru" lang="ru">анимация</span></button></li>
+                       <li><button type="button" class="filter-item" data-filter="ux-ui" aria-pressed="false">UX/UI</button></li>
+                       <li><button type="button" class="filter-item" data-filter="identity" aria-pressed="false"><span data-language="en" lang="en">identity</span>
+                            <span data-language="ru" lang="ru">айдентика</span></button></li>
+                       <li><button type="button" class="filter-item" data-filter="frontend" aria-pressed="false"><span data-language="en" lang="en">frontend</span>
+                            <span data-language="ru" lang="ru">фронтенд</span></button></li>
+                       <li><button type="button" class="filter-item" data-filter="posters" aria-pressed="false"><span data-language="en" lang="en">posters</span>
+                            <span data-language="ru" lang="ru">постеры</span></button></li>
                     </ul>
                 </div>
                 <div class="projects-grid">
-                    <div class="project-card" data-category="posters">
-                       <img src="images/brandposter.jpg" alt="Brand posters" class="project-img">
-                       <a href="brandposter.html" class="project-title">
-                            <span lang="en">Brand posters</span>
-                            <span lang="ru" style="display:none;">Брендовые постеры</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">May 2026</span>
-                            <span lang="ru" style="display:none;">Май 2026</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="animation posters">
-                       <img src="images/posters3d.jpg" alt="3D posters animation" class="project-img">
-                       <a href="posters3d.html" class="project-title">
-                            <span lang="en">3D posters animation</span>
-                            <span lang="ru" style="display:none;">3D-анимация постеров</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">November 2025</span>
-                            <span lang="ru" style="display:none;">Ноябрь 2025</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="animation posters">
-                       <img src="images/poster.jpg" alt="Posters animation" class="project-img">
-                       <a href="posteranimation.html" class="project-title">
-                            <span lang="en">Posters animation</span>
-                            <span lang="ru" style="display:none;">Анимация постеров</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">November 2025</span>
-                            <span lang="ru" style="display:none;">Ноябрь 2025</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="identity">
-                       <img src="images/resumedev.jpg" alt="Resume development" class="project-img">
-                       <a href="resumedesign.html" class="project-title">
-                            <span lang="en">Resume design</span>
-                            <span lang="ru" style="display:none;">Оформление резюме</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">August 2026</span>
-                            <span lang="ru" style="display:none;">Август 2026</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="identity">
-                       <img src="images/brandidentity.jpg" alt="Brand identity" class="project-img">
-                       <a href="brandidentity.html" class="project-title">
-                            <span lang="en">Brand identity</span>
-                            <span lang="ru" style="display:none;">Айдентика бренда</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">December 2025</span>
-                            <span lang="ru" style="display:none;">Декабрь 2025</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="frontend">
-                       <img src="images/web.jpg" alt="Web-page development" class="project-img">
-                       <a href="webdev.html" class="project-title">
-                            <span lang="en">Web-page development</span>
-                            <span lang="ru" style="display:none;">Разработка веб-страницы</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">December 2025</span>
-                            <span lang="ru" style="display:none;">Декабрь 2025</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="identity posters">
-                       <img src="images/eventidentity.jpg" alt="Event identity" class="project-img">
-                       <a href="eventidentity.html" class="project-title">
-                            <span lang="en">Event identity</span>
-                            <span lang="ru" style="display:none;">Айдентика мероприятия</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">October 2025</span>
-                            <span lang="ru" style="display:none;">Октябрь 2025</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="identity posters">
-                       <img src="images/eventrebranding.jpg" alt="Event rebranding" class="project-img">
-                       <a href="eventrebranding.html" class="project-title">
-                            <span lang="en">Event rebranding</span>
-                            <span lang="ru" style="display:none;">Ребрендинг мероприятия</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">September 2026</span>
-                            <span lang="ru" style="display:none;">Сентябрь 2026</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="posters">
-                       <img src="images/eventposter.jpg" alt="Event poster" class="project-img">
-                       <a href="eventposter.html" class="project-title">
-                            <span lang="en">Event poster</span>
-                            <span lang="ru" style="display:none;">Постер мероприятия</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">August 2026</span>
-                            <span lang="ru" style="display:none;">Август 2026</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="ux-ui frontend">
-                       <img src="images/app.jpg" alt="Mini app development" class="project-img">
-                       <a href="appdev.html" class="project-title">
-                            <span lang="en">Mini app development</span>
-                            <span lang="ru" style="display:none;">Разработка мини-приложения</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">July 2024</span>
-                            <span lang="ru" style="display:none;">Июль 2024</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="animation">
-                       <img src="images/bicycle.jpg" alt="Bicycle animation" class="project-img">
-                       <a href="bicycleanimation.html" class="project-title">
-                            <span lang="en">Bicycle animation</span>
-                            <span lang="ru" style="display:none;">Анимация велосипеда</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">June 2026</span>
-                            <span lang="ru" style="display:none;">Июнь 2026</span>
-                       </p>
-                    </div>
-                    <div class="project-card" data-category="animation">
-                       <img src="images/face.jpg" alt="Face emotions animation" class="project-img">
-                       <a href="faceanimation.html" class="project-title">
-                            <span lang="en">Face emotions animation</span>
-                            <span lang="ru" style="display:none;">Анимация эмоций лица</span>
-                       </a>
-                       <p class="project-date">
-                            <span lang="en">May 2026</span>
-                            <span lang="ru" style="display:none;">Май 2026</span>
-                       </p>
-                    </div>
-                </div>
-        </section>
-        <section class="contacts" id="contacts">
-            <div class="container">
-                <div class="all-contacts">
-                    <h1>
-                        <span lang="en">Contacts</span>
-                        <span lang="ru" style="display:none;">Контакты</span>
-                    </h1>
-                    <div class="contacts-info">
-                        <div class="phone">
-                            <h2>
-                                <span lang="en">Phone</span>
-                                <span lang="ru" style="display:none;">Телефон</span>
-                            </h2>
-                            <a href="tel:89214184117" class="phone-link">+7 (921) 418 41-17</a>
-                        </div>
-                        <div class="email">
-                            <h2>
-                                <span lang="en">Email</span>
-                                <span lang="ru" style="display:none;">Почта</span>
-                            </h2>
-                            <p>elya206@icloud.com</p>
-                        </div>
-                        <div class="sotial-net">
-                            <h2>
-                                <span lang="en">Social Networks</span>
-                                <span lang="ru" style="display:none;">Соцсети</span>
-                            </h2>
-                            <p>Telegram: @g1ddmn</p>
-                        </div>
-                    </div>
+                    <article class="project-card" data-category="posters">
+                        <a class="project-card-link" href="brandposter.html" aria-labelledby="project-brandposter">
+                            <div class="project-cover">
+                                <img src="images/optimized/brandposter-960.webp" srcset="images/optimized/brandposter-384.webp 384w, images/optimized/brandposter-640.webp 640w, images/optimized/brandposter-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1010" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Posters</span><span data-language="ru" lang="ru">Постеры</span></span>
+                                <h3 class="project-title" id="project-brandposter"><span data-language="en" lang="en">Brand posters</span><span data-language="ru" lang="ru">Брендовые постеры</span></h3>
+                                <time class="project-date" datetime="2026-05"><span data-language="en" lang="en">May 2026</span><span data-language="ru" lang="ru">Май 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="animation posters">
+                        <a class="project-card-link" href="posters3d.html" aria-labelledby="project-posters3d">
+                            <div class="project-cover">
+                                <img src="images/optimized/posters3d-960.webp" srcset="images/optimized/posters3d-384.webp 384w, images/optimized/posters3d-640.webp 640w, images/optimized/posters3d-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Animation · Posters</span><span data-language="ru" lang="ru">Анимация · Постеры</span></span>
+                                <h3 class="project-title" id="project-posters3d"><span data-language="en" lang="en">3D posters animation</span><span data-language="ru" lang="ru">3D-анимация постеров</span></h3>
+                                <time class="project-date" datetime="2025-11"><span data-language="en" lang="en">November 2025</span><span data-language="ru" lang="ru">Ноябрь 2025</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="animation posters">
+                        <a class="project-card-link" href="posteranimation.html" aria-labelledby="project-posteranimation">
+                            <div class="project-cover">
+                                <img src="images/optimized/poster-960.webp" srcset="images/optimized/poster-384.webp 384w, images/optimized/poster-640.webp 640w, images/optimized/poster-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Animation · Posters</span><span data-language="ru" lang="ru">Анимация · Постеры</span></span>
+                                <h3 class="project-title" id="project-posteranimation"><span data-language="en" lang="en">Posters animation</span><span data-language="ru" lang="ru">Анимация постеров</span></h3>
+                                <time class="project-date" datetime="2025-11"><span data-language="en" lang="en">November 2025</span><span data-language="ru" lang="ru">Ноябрь 2025</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="identity">
+                        <a class="project-card-link" href="resumedesign.html" aria-labelledby="project-resumedesign">
+                            <div class="project-cover">
+                                <img src="images/optimized/resumedev-960.webp" srcset="images/optimized/resumedev-384.webp 384w, images/optimized/resumedev-640.webp 640w, images/optimized/resumedev-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Identity</span><span data-language="ru" lang="ru">Айдентика</span></span>
+                                <h3 class="project-title" id="project-resumedesign"><span data-language="en" lang="en">Resume design</span><span data-language="ru" lang="ru">Оформление резюме</span></h3>
+                                <time class="project-date" datetime="2026-08"><span data-language="en" lang="en">August 2026</span><span data-language="ru" lang="ru">Август 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="identity">
+                        <a class="project-card-link" href="brandidentity.html" aria-labelledby="project-brandidentity">
+                            <div class="project-cover">
+                                <img src="images/optimized/brandidentity-960.webp" srcset="images/optimized/brandidentity-384.webp 384w, images/optimized/brandidentity-640.webp 640w, images/optimized/brandidentity-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Identity</span><span data-language="ru" lang="ru">Айдентика</span></span>
+                                <h3 class="project-title" id="project-brandidentity"><span data-language="en" lang="en">Brand identity</span><span data-language="ru" lang="ru">Айдентика бренда</span></h3>
+                                <time class="project-date" datetime="2025-12"><span data-language="en" lang="en">December 2025</span><span data-language="ru" lang="ru">Декабрь 2025</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="frontend">
+                        <a class="project-card-link" href="webdev.html" aria-labelledby="project-webdev">
+                            <div class="project-cover">
+                                <img src="images/optimized/web-960.webp" srcset="images/optimized/web-384.webp 384w, images/optimized/web-640.webp 640w, images/optimized/web-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1010" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Frontend</span><span data-language="ru" lang="ru">Фронтенд</span></span>
+                                <h3 class="project-title" id="project-webdev"><span data-language="en" lang="en">Web-page development</span><span data-language="ru" lang="ru">Разработка сайта</span></h3>
+                                <time class="project-date" datetime="2025-12"><span data-language="en" lang="en">December 2025</span><span data-language="ru" lang="ru">Декабрь 2025</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="identity posters">
+                        <a class="project-card-link" href="eventidentity.html" aria-labelledby="project-eventidentity">
+                            <div class="project-cover">
+                                <img src="images/optimized/eventidentity-960.webp" srcset="images/optimized/eventidentity-384.webp 384w, images/optimized/eventidentity-640.webp 640w, images/optimized/eventidentity-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Identity · Posters</span><span data-language="ru" lang="ru">Айдентика · Постеры</span></span>
+                                <h3 class="project-title" id="project-eventidentity"><span data-language="en" lang="en">Event identity</span><span data-language="ru" lang="ru">Айдентика мероприятия</span></h3>
+                                <time class="project-date" datetime="2025-10"><span data-language="en" lang="en">October 2025</span><span data-language="ru" lang="ru">Октябрь 2025</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="identity posters">
+                        <a class="project-card-link" href="eventrebranding.html" aria-labelledby="project-eventrebranding">
+                            <div class="project-cover">
+                                <img src="images/optimized/eventrebranding-960.webp" srcset="images/optimized/eventrebranding-384.webp 384w, images/optimized/eventrebranding-640.webp 640w, images/optimized/eventrebranding-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1198" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Identity · Posters</span><span data-language="ru" lang="ru">Айдентика · Постеры</span></span>
+                                <h3 class="project-title" id="project-eventrebranding"><span data-language="en" lang="en">Event rebranding</span><span data-language="ru" lang="ru">Ребрендинг мероприятия</span></h3>
+                                <time class="project-date" datetime="2026-09"><span data-language="en" lang="en">September 2026</span><span data-language="ru" lang="ru">Сентябрь 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="posters">
+                        <a class="project-card-link" href="eventposter.html" aria-labelledby="project-eventposter">
+                            <div class="project-cover">
+                                <img src="images/optimized/eventposter-960.webp" srcset="images/optimized/eventposter-384.webp 384w, images/optimized/eventposter-640.webp 640w, images/optimized/eventposter-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Posters</span><span data-language="ru" lang="ru">Постеры</span></span>
+                                <h3 class="project-title" id="project-eventposter"><span data-language="en" lang="en">Event poster</span><span data-language="ru" lang="ru">Постер мероприятия</span></h3>
+                                <time class="project-date" datetime="2026-08"><span data-language="en" lang="en">August 2026</span><span data-language="ru" lang="ru">Август 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="ux-ui frontend">
+                        <a class="project-card-link" href="appdev.html" aria-labelledby="project-appdev">
+                            <div class="project-cover">
+                                <img src="images/optimized/app-960.webp" srcset="images/optimized/app-384.webp 384w, images/optimized/app-640.webp 640w, images/optimized/app-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">UX/UI · Frontend</span><span data-language="ru" lang="ru">UX/UI · Фронтенд</span></span>
+                                <h3 class="project-title" id="project-appdev"><span data-language="en" lang="en">Mini app development</span><span data-language="ru" lang="ru">Разработка мини-приложения</span></h3>
+                                <time class="project-date" datetime="2024-07"><span data-language="en" lang="en">July 2024</span><span data-language="ru" lang="ru">Июль 2024</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="animation">
+                        <a class="project-card-link" href="bicycleanimation.html" aria-labelledby="project-bicycleanimation">
+                            <div class="project-cover">
+                                <img src="images/optimized/bicycle-960.webp" srcset="images/optimized/bicycle-384.webp 384w, images/optimized/bicycle-640.webp 640w, images/optimized/bicycle-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Animation</span><span data-language="ru" lang="ru">Анимация</span></span>
+                                <h3 class="project-title" id="project-bicycleanimation"><span data-language="en" lang="en">Bicycle animation</span><span data-language="ru" lang="ru">Анимация велосипеда</span></h3>
+                                <time class="project-date" datetime="2026-06"><span data-language="en" lang="en">June 2026</span><span data-language="ru" lang="ru">Июнь 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="project-card" data-category="animation">
+                        <a class="project-card-link" href="faceanimation.html" aria-labelledby="project-faceanimation">
+                            <div class="project-cover">
+                                <img src="images/optimized/face-960.webp" srcset="images/optimized/face-384.webp 384w, images/optimized/face-640.webp 640w, images/optimized/face-960.webp 960w" sizes="(max-width: 690px) calc(100vw - 40px), (max-width: 1333px) 44vw, 584px" width="960" height="1013" alt="" decoding="async" loading="lazy">
+                            </div>
+                            <div class="project-card-body">
+                                <span class="project-category"><span data-language="en" lang="en">Animation</span><span data-language="ru" lang="ru">Анимация</span></span>
+                                <h3 class="project-title" id="project-faceanimation"><span data-language="en" lang="en">Face emotions animation</span><span data-language="ru" lang="ru">Анимация мимики</span></h3>
+                                <time class="project-date" datetime="2026-05"><span data-language="en" lang="en">May 2026</span><span data-language="ru" lang="ru">Май 2026</span></time>
+                                <span class="project-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-info">
-                <a href="" class="logo">
-                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+            <div class="footer-intro">
+                <h2><span data-language="en" lang="en">Let’s talk</span><span data-language="ru" lang="ru">Давайте обсудим проект</span></h2>
+                <p><span data-language="en" lang="en">Have a project in mind? Get in touch.</span><span data-language="ru" lang="ru">Расскажите о своей идее или задайте вопрос.</span></p>
+            </div>
+            <address class="contact-grid">
+                <a class="contact-card" href="mailto:elya206@icloud.com">
+                    <span class="contact-label"><span data-language="en" lang="en">Email</span><span data-language="ru" lang="ru">Почта</span></span>
+                    <span class="contact-value">elya206@icloud.com</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
                 </a>
-                <p>2026</p>
+                <a class="contact-card" href="https://t.me/g1ddmn">
+                    <span class="contact-label"><span data-language="en" lang="en">Telegram</span><span data-language="ru" lang="ru">Telegram</span></span>
+                    <span class="contact-value">@g1ddmn</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-card" href="tel:+79214184117">
+                    <span class="contact-label"><span data-language="en" lang="en">Phone</span><span data-language="ru" lang="ru">Телефон</span></span>
+                    <span class="contact-value">+7 (921) 418-41-17</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+            </address>
+            <div class="footer-info">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
+                <span class="footer-credit">© 2026 <span data-language="en" lang="en">Elvira Bocharova</span><span data-language="ru" lang="ru">Эльвира Бочарова</span></span>
+                <a class="back-to-top" href="#top"><span data-language="en" lang="en">Back to top</span><span data-language="ru" lang="ru">Наверх</span> <span aria-hidden="true">↑</span></a>
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/lang.js"></script>
 </body>
 </html>
