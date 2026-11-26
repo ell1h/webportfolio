@@ -1,121 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <title data-title-ru="Разработка мини-приложения · Эльвира Бочарова">Mini app development · Elvira Bocharova</title>
+    <script src="js/lang.js"></script>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>mini app development</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
-                </a>
-
+            <nav class="nav" aria-label="Main navigation" data-aria-ru="Основная навигация">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
                 <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#about" class="menu-link">about me</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#skills" class="menu-link">skills</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#education" class="menu-link">education</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#projects" class="menu-link">projects</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-link">contacts</a>
-                    </li>
+                    <li><a href="index.html#about" class="menu-link"><span data-language="en" lang="en">About</span><span data-language="ru" lang="ru">Обо мне</span></a></li>
+                    <li><a href="index.html#skills" class="menu-link"><span data-language="en" lang="en">Skills</span><span data-language="ru" lang="ru">Навыки</span></a></li>
+                    <li><a href="index.html#education" class="menu-link"><span data-language="en" lang="en">Education</span><span data-language="ru" lang="ru">Образование</span></a></li>
+                    <li><a href="index.html#projects" class="menu-link"><span data-language="en" lang="en">Projects</span><span data-language="ru" lang="ru">Проекты</span></a></li>
+                    <li><a href="#contacts" class="menu-link"><span data-language="en" lang="en">Contact</span><span data-language="ru" lang="ru">Контакты</span></a></li>
                 </ul>
+                <div class="site-settings" hidden>
+                    <div class="language-switch" role="group" aria-label="Language" data-aria-ru="Язык">
+                        <button type="button" data-set-language="ru" aria-label="Russian" data-aria-ru="Русский" aria-pressed="false">RU</button>
+                        <button type="button" data-set-language="en" aria-label="English" data-aria-ru="Английский" aria-pressed="true">EN</button>
+                    </div>
+                    <button type="button" class="theme-switch" data-theme-switch aria-label="Dark theme" data-aria-ru="Тёмная тема" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main case-main">
         <section class="about-project">
             <div class="container">
-                <div class="project-info">
-                    <h1 class="project-name">Mini app development</h1>
-                    <p>This is my first real project in the field of web design, where the main goal was to develop mini application for Star Bot in Telegram. I created full interface, which includes shopping, gaming and profile pages and corresponds to the main users.</p>
-                </div>
-            </div>
-        </section>
-        <section class="stack">
-            <div class="container">
-                <div class="stack-info">
-                    <h1 class="title">Stack</h1>
-                    <p>Figma, Adobe Illustrator, Adobe Photoshop, User research</p>
+                <a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> <span data-language="en" lang="en">All projects</span><span data-language="ru" lang="ru">Все проекты</span></a>
+                <div class="case-intro">
+                    <div class="project-info">
+                        <h1 class="project-name"><span data-language="en" lang="en">Mini app development</span><span data-language="ru" lang="ru">Разработка мини-приложения</span></h1>
+                        <p><span data-language="en" lang="en">This was my first client project in web design. I designed the interface for Star Bot’s Telegram mini app, including the shop, game screens and user profile.</span><span data-language="ru" lang="ru">Моим первым проектом в веб-дизайне стал интерфейс мини-приложения Star Bot в Telegram. Я спроектировала экраны магазина и игры, а также профиль пользователя.</span></p>
+                    </div>
+                    <aside class="case-details">
+                        <dl class="case-meta">
+                            <div>
+                                <dt><span data-language="en" lang="en">Discipline</span><span data-language="ru" lang="ru">Направление</span></dt>
+                                <dd><span data-language="en" lang="en">UX/UI · Frontend</span><span data-language="ru" lang="ru">UX/UI · Фронтенд</span></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Date</span><span data-language="ru" lang="ru">Дата</span></dt>
+                                <dd><time datetime="2024-07"><span data-language="en" lang="en">July 2024</span><span data-language="ru" lang="ru">Июль 2024</span></time></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Tools</span><span data-language="ru" lang="ru">Инструменты</span></dt>
+                                <dd><span data-language="en" lang="en">Figma, Adobe Illustrator, Adobe Photoshop, User research</span><span data-language="ru" lang="ru">Figma, Adobe Illustrator, Adobe Photoshop, исследования пользователей</span></dd>
+                            </div>
+                        </dl>
+                        <a class="figma-link" href="https://www.figma.com/design/ZVaoUBWMn5osdTXNAC3253/starbot?node-id=0-1&t=WtDehtnkX1OhRHfo-1"><span data-language="en" lang="en">Open in Figma</span><span data-language="ru" lang="ru">Открыть в Figma</span> <span aria-hidden="true">↗</span></a>
+                    </aside>
                 </div>
             </div>
         </section>
         <section class="project">
             <div class="container">
                 <div class="project1">
-                    <h1 class="case-title">Case</h1>
-                    <a class="figma-link" href="https://www.figma.com/design/ZVaoUBWMn5osdTXNAC3253/starbot?node-id=0-1&t=WtDehtnkX1OhRHfo-1">click to watch in figma</a>
+                    <h2 class="gallery-title"><span data-language="en" lang="en">Project gallery</span><span data-language="ru" lang="ru">Материалы проекта</span></h2>
                     <div class="project-parts">
                         <div class="users-pages">
-                            <h3 class="part-name">User's pages</h3>
+                            <h3 class="part-name"><span data-language="en" lang="en">User&#x27;s pages</span><span data-language="ru" lang="ru">Экраны профиля</span></h3>
                             <div class="profile">
-                                <p class="part-name">Profile</p>
-                                <img src="images/profile.jpg" alt="Profile">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/profile.jpg">
+                                        <img src="images/optimized/profile-305.webp" width="305" height="513"
+                                            alt="Profile" decoding="async" loading="lazy" data-alt-ru="Профиль">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Profile</span><span data-language="ru" lang="ru">Профиль</span></figcaption>
+                                </figure>
                             </div>
                             <div class="inventory">
-                                <p class="part-name">Inventory</p>
-                                <img src="images/inventory.jpg" alt="Inventory">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/inventory.jpg">
+                                        <img src="images/optimized/inventory-305.webp" width="305" height="513"
+                                            alt="Inventory" decoding="async" loading="lazy" data-alt-ru="Инвентарь">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Inventory</span><span data-language="ru" lang="ru">Инвентарь</span></figcaption>
+                                </figure>
                             </div>
-                            <h3 class="part-name">Gaming pages</h3>
+                            <h3 class="part-name"><span data-language="en" lang="en">Gaming pages</span><span data-language="ru" lang="ru">Игровые экраны</span></h3>
                             <div class="start">
-                                <p class="part-name">Start</p>
-                                <img src="images/start.jpg" alt="Start">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/start.jpg">
+                                        <img src="images/optimized/start-305.webp" width="305" height="513"
+                                            alt="Start" decoding="async" loading="lazy" data-alt-ru="Старт">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Start</span><span data-language="ru" lang="ru">Старт</span></figcaption>
+                                </figure>
                             </div>
                             <div class="no-start">
-                                <p class="part-name">No start</p>
-                                <img src="images/nostart.jpg" alt="No start">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/nostart.jpg">
+                                        <img src="images/optimized/nostart-305.webp" width="305" height="513"
+                                            alt="No start" decoding="async" loading="lazy" data-alt-ru="Старт недоступен">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">No start</span><span data-language="ru" lang="ru">Старт недоступен</span></figcaption>
+                                </figure>
                             </div>
                             <div class="no-prize">
-                                <p class="part-name">No prize</p>
-                                <img src="images/noprize.jpg" alt="No prize">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/noprize.jpg">
+                                        <img src="images/optimized/noprize-304.webp" width="304" height="512"
+                                            alt="No prize" decoding="async" loading="lazy" data-alt-ru="Без приза">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">No prize</span><span data-language="ru" lang="ru">Без приза</span></figcaption>
+                                </figure>
                             </div>
                             <div class="prize-var1">
-                                <p class="part-name">Prize variation 1</p>
-                                <img src="images/prize1.jpg" alt="Prize variation 1">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/prize1.jpg">
+                                        <img src="images/optimized/prize1-305.webp" width="305" height="513"
+                                            alt="Prize variation 1" decoding="async" loading="lazy" data-alt-ru="Вариант приза 1">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Prize variation 1</span><span data-language="ru" lang="ru">Вариант приза 1</span></figcaption>
+                                </figure>
                             </div>
                             <div class="prize-var2">
-                                <p class="part-name">Prize variation 2</p>
-                                <img src="images/prize2.jpg" alt="Prize variation 2">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/prize2.jpg">
+                                        <img src="images/optimized/prize2-305.webp" width="305" height="513"
+                                            alt="Prize variation 2" decoding="async" loading="lazy" data-alt-ru="Вариант приза 2">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Prize variation 2</span><span data-language="ru" lang="ru">Вариант приза 2</span></figcaption>
+                                </figure>
                             </div>
                             <div class="videocards">
-                                <p class="part-name">User’s videocards</p>
-                                <img src="images/videocards.jpg" alt="User’s videocards">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/videocards.jpg">
+                                        <img src="images/optimized/videocards-305.webp" width="305" height="513"
+                                            alt="User’s videocards" decoding="async" loading="lazy" data-alt-ru="Видеокарты пользователя">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">User’s videocards</span><span data-language="ru" lang="ru">Видеокарты пользователя</span></figcaption>
+                                </figure>
                             </div>
-                            <h3 class="part-name">Shopping pages</h3>
+                            <h3 class="part-name"><span data-language="en" lang="en">Shopping pages</span><span data-language="ru" lang="ru">Экраны магазина</span></h3>
                             <div class="shop">
-                                <p class="part-name">House shop</p>
-                                <img src="images/houseshop.jpg" alt="House shop">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/houseshop.jpg">
+                                        <img src="images/optimized/houseshop-305.webp" width="305" height="513"
+                                            alt="House shop" decoding="async" loading="lazy" data-alt-ru="Магазин домов">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">House shop</span><span data-language="ru" lang="ru">Магазин домов</span></figcaption>
+                                </figure>
                             </div>
                             <div class="shop-var">
-                                <p class="part-name">House shop variation</p>
-                                <img src="images/houseshop1.jpg" alt="House shop variation">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/houseshop1.jpg">
+                                        <img src="images/optimized/houseshop1-305.webp" width="305" height="513"
+                                            alt="House shop variation" decoding="async" loading="lazy" data-alt-ru="Вариант экрана магазина">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">House shop variation</span><span data-language="ru" lang="ru">Вариант экрана магазина</span></figcaption>
+                                </figure>
                             </div>
                             <div class="dialogue-offer">
-                                <p class="part-name">Offer dialogue</p>
-                                <img src="images/dialogue1.jpg" alt="Offer dialogue">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/dialogue1.jpg">
+                                        <img src="images/optimized/dialogue1-305.webp" width="305" height="513"
+                                            alt="Offer dialogue" decoding="async" loading="lazy" data-alt-ru="Окно с предложением">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Offer dialogue</span><span data-language="ru" lang="ru">Окно с предложением</span></figcaption>
+                                </figure>
                             </div>
                             <div class="dialogue-cong">
-                                <p class="part-name">Congratulation dialogue</p>
-                                <img src="images/dialogue2.jpg" alt="Congratulation dialogue">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/dialogue2.jpg">
+                                        <img src="images/optimized/dialogue2-305.webp" width="305" height="513"
+                                            alt="Congratulation dialogue" decoding="async" loading="lazy" data-alt-ru="Окно с поздравлением">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Congratulation dialogue</span><span data-language="ru" lang="ru">Окно с поздравлением</span></figcaption>
+                                </figure>
                             </div>
                             <div class="dialogue-ref">
-                                <p class="part-name">Refusal dialogue</p>
-                                <img src="images/dialogue3.jpg" alt="Refusal dialogue">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/dialogue3.jpg">
+                                        <img src="images/optimized/dialogue3-305.webp" width="305" height="513"
+                                            alt="Refusal dialogue" decoding="async" loading="lazy" data-alt-ru="Окно с отказом">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Refusal dialogue</span><span data-language="ru" lang="ru">Окно с отказом</span></figcaption>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -123,13 +208,33 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-info">
-                <a href="index.html" class="logo">
-                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+            <div class="footer-intro">
+                <h2><span data-language="en" lang="en">Let’s talk</span><span data-language="ru" lang="ru">Давайте обсудим проект</span></h2>
+                <p><span data-language="en" lang="en">Have a project in mind? Get in touch.</span><span data-language="ru" lang="ru">Расскажите о своей идее или задайте вопрос.</span></p>
+            </div>
+            <address class="contact-grid">
+                <a class="contact-card" href="mailto:elya206@icloud.com">
+                    <span class="contact-label"><span data-language="en" lang="en">Email</span><span data-language="ru" lang="ru">Почта</span></span>
+                    <span class="contact-value">elya206@icloud.com</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
                 </a>
-                <p>2026</p>
+                <a class="contact-card" href="https://t.me/g1ddmn">
+                    <span class="contact-label"><span data-language="en" lang="en">Telegram</span><span data-language="ru" lang="ru">Telegram</span></span>
+                    <span class="contact-value">@g1ddmn</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-card" href="tel:+79214184117">
+                    <span class="contact-label"><span data-language="en" lang="en">Phone</span><span data-language="ru" lang="ru">Телефон</span></span>
+                    <span class="contact-value">+7 (921) 418-41-17</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+            </address>
+            <div class="footer-info">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
+                <span class="footer-credit">© 2026 <span data-language="en" lang="en">Elvira Bocharova</span><span data-language="ru" lang="ru">Эльвира Бочарова</span></span>
+                <a class="back-to-top" href="#top"><span data-language="en" lang="en">Back to top</span><span data-language="ru" lang="ru">Наверх</span> <span aria-hidden="true">↑</span></a>
             </div>
         </div>
     </footer>

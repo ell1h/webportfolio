@@ -1,134 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <title data-title-ru="Айдентика бренда · Эльвира Бочарова">Brand identity · Elvira Bocharova</title>
+    <script src="js/lang.js"></script>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>brand identity</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
-                </a>
-
+            <nav class="nav" aria-label="Main navigation" data-aria-ru="Основная навигация">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
                 <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#about" class="menu-link">about me</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#skills" class="menu-link">skills</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#education" class="menu-link">education</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#projects" class="menu-link">projects</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-link">contacts</a>
-                    </li>
+                    <li><a href="index.html#about" class="menu-link"><span data-language="en" lang="en">About</span><span data-language="ru" lang="ru">Обо мне</span></a></li>
+                    <li><a href="index.html#skills" class="menu-link"><span data-language="en" lang="en">Skills</span><span data-language="ru" lang="ru">Навыки</span></a></li>
+                    <li><a href="index.html#education" class="menu-link"><span data-language="en" lang="en">Education</span><span data-language="ru" lang="ru">Образование</span></a></li>
+                    <li><a href="index.html#projects" class="menu-link"><span data-language="en" lang="en">Projects</span><span data-language="ru" lang="ru">Проекты</span></a></li>
+                    <li><a href="#contacts" class="menu-link"><span data-language="en" lang="en">Contact</span><span data-language="ru" lang="ru">Контакты</span></a></li>
                 </ul>
+                <div class="site-settings" hidden>
+                    <div class="language-switch" role="group" aria-label="Language" data-aria-ru="Язык">
+                        <button type="button" data-set-language="ru" aria-label="Russian" data-aria-ru="Русский" aria-pressed="false">RU</button>
+                        <button type="button" data-set-language="en" aria-label="English" data-aria-ru="Английский" aria-pressed="true">EN</button>
+                    </div>
+                    <button type="button" class="theme-switch" data-theme-switch aria-label="Dark theme" data-aria-ru="Тёмная тема" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main case-main">
         <section class="about-project">
             <div class="container">
-                <div class="project-info">
-                    <h1 class="project-name">Brand identity</h1>
-                    <p>This project was developing during my second year of studying at university. Here I created full identity of restaurant started with name and finished with the most important pack of materials.</p>
-                </div>
-            </div>
-        </section>
-        <section class="stack">
-            <div class="container">
-                <div class="stack-info">
-                    <h1 class="title">Stack</h1>
-                    <p>Figma, Adobe Illustrator, Adobe Photoshop</p>
+                <a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> <span data-language="en" lang="en">All projects</span><span data-language="ru" lang="ru">Все проекты</span></a>
+                <div class="case-intro">
+                    <div class="project-info">
+                        <h1 class="project-name"><span data-language="en" lang="en">Brand identity</span><span data-language="ru" lang="ru">Айдентика бренда</span></h1>
+                        <p><span data-language="en" lang="en">In my second year at university, I developed a restaurant identity, from naming to the logo, typography and printed materials.</span><span data-language="ru" lang="ru">На втором курсе я разработала фирменный стиль ресторана. Я придумала название, создала логотип, подобрала шрифты и оформила меню, визитку и флаеры.</span></p>
+                    </div>
+                    <aside class="case-details">
+                        <dl class="case-meta">
+                            <div>
+                                <dt><span data-language="en" lang="en">Discipline</span><span data-language="ru" lang="ru">Направление</span></dt>
+                                <dd><span data-language="en" lang="en">Identity</span><span data-language="ru" lang="ru">Айдентика</span></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Date</span><span data-language="ru" lang="ru">Дата</span></dt>
+                                <dd><time datetime="2025-12"><span data-language="en" lang="en">December 2025</span><span data-language="ru" lang="ru">Декабрь 2025</span></time></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Tools</span><span data-language="ru" lang="ru">Инструменты</span></dt>
+                                <dd>Figma, Adobe Illustrator, Adobe Photoshop</dd>
+                            </div>
+                        </dl>
+                        <a class="figma-link" href="https://www.figma.com/design/n1MkhTQ9XroVCSy3HOii4w/lumiere-kitchen-project?node-id=1-30&t=vl1AbCWwgJtGGhTr-1"><span data-language="en" lang="en">Open in Figma</span><span data-language="ru" lang="ru">Открыть в Figma</span> <span aria-hidden="true">↗</span></a>
+                    </aside>
                 </div>
             </div>
         </section>
         <section class="project">
             <div class="container">
                 <div class="project1">
-                    <h1 class="case-title">Case</h1>
-                    <a class="figma-link" href="https://www.figma.com/design/n1MkhTQ9XroVCSy3HOii4w/lumiere-kitchen-project?node-id=1-30&t=vl1AbCWwgJtGGhTr-1">click to watch in figma</a>
+                    <h2 class="gallery-title"><span data-language="en" lang="en">Project gallery</span><span data-language="ru" lang="ru">Материалы проекта</span></h2>
                     <div class="project-chapters">
-                        <h3 class="part-1">Identity</h3>
+                        <h3 class="part-1"><span data-language="en" lang="en">Identity</span><span data-language="ru" lang="ru">Айдентика</span></h3>
                         <div class="first-part">
                             <div class="logo-var1">
-                                <p class="part-name">Logo variation 1</p>
-                                <img src="images/logolk1.svg" alt="Logo variation 1">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/logolk1.svg">
+                                        <img src="images/logolk1.svg"
+                                            alt="Logo variation 1" decoding="async" loading="lazy" data-alt-ru="Вариант логотипа 1">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Logo variation 1</span><span data-language="ru" lang="ru">Вариант логотипа 1</span></figcaption>
+                                </figure>
                             </div>
                             <div class="logo-var2">
-                                <p class="part-name">Logo variation 2</p>
-                                <img src="images/logolk2.svg" alt="Logo variation 2">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/logolk2.svg">
+                                        <img src="images/logolk2.svg"
+                                            alt="Logo variation 2" decoding="async" loading="lazy" data-alt-ru="Вариант логотипа 2">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Logo variation 2</span><span data-language="ru" lang="ru">Вариант логотипа 2</span></figcaption>
+                                </figure>
                             </div>
                             <div class="colors">
-                                <p class="part-name">Color combination</p>
-                                <img src="images/colors.svg" alt="Color combination">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/colors.svg">
+                                        <img src="images/colors.svg"
+                                            alt="Color combination" decoding="async" loading="lazy" data-alt-ru="Цветовая палитра">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Color combination</span><span data-language="ru" lang="ru">Цветовая палитра</span></figcaption>
+                                </figure>
                             </div>
                             <div class="typography">
-                                <p class="part-name">Typography</p>
-                                <p class="type-text">type:</p>
+                                <p class="part-name"><span data-language="en" lang="en">Typography</span><span data-language="ru" lang="ru">Типографика</span></p>
+                                <p class="type-text"><span data-language="en" lang="en">type:</span><span data-language="ru" lang="ru">Шрифт</span></p>
                                 <p class="type">Ysabeau Infant</p>
-                                <p class="type-text">size:</p>
-                                <p class="type">variable </p>
-                                <p class="type-text">weight:</p>
-                                <p class="type">variable</p>
+                                <p class="type-text"><span data-language="en" lang="en">size:</span><span data-language="ru" lang="ru">Размер</span></p>
+                                <p class="type"><span data-language="en" lang="en">variable</span><span data-language="ru" lang="ru">Зависит от макета</span></p>
+                                <p class="type-text"><span data-language="en" lang="en">weight:</span><span data-language="ru" lang="ru">Насыщенность</span></p>
+                                <p class="type"><span data-language="en" lang="en">variable</span><span data-language="ru" lang="ru">Переменная</span></p>
                             </div>
                         </div>
-                        <h3 class="printed-materials">Printed materials</h3>
+                        <h3 class="printed-materials"><span data-language="en" lang="en">Printed materials</span><span data-language="ru" lang="ru">Печатные материалы</span></h3>
                         <div class="prints">
                             <div class="basket-none">
-                                <p class="part-name">Business card</p>
-                                <img src="images/businesscard.jpg" alt="Business card">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/businesscard.jpg">
+                                        <img src="images/optimized/businesscard-916.webp"
+                                            srcset="images/optimized/businesscard-520.webp 520w, images/optimized/businesscard-916.webp 916w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="916" height="1278"
+                                            alt="Business card" decoding="async" loading="lazy" data-alt-ru="Визитка">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Business card</span><span data-language="ru" lang="ru">Визитка</span></figcaption>
+                                </figure>
                             </div>
                             <div class="flyer1">
-                                <p class="part-name">Flyer 1</p>
-                                <img src="images/flyer1.jpg" alt="Flyer 1">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/flyer1.jpg">
+                                        <img src="images/optimized/flyer1-1280.webp"
+                                            srcset="images/optimized/flyer1-520.webp 520w, images/optimized/flyer1-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1487"
+                                            alt="Flyer 1" decoding="async" loading="lazy" data-alt-ru="Флаер 1">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Flyer 1</span><span data-language="ru" lang="ru">Флаер 1</span></figcaption>
+                                </figure>
                             </div>
                             <div class="flyer2">
-                                <p class="part-name">Flyer 2</p>
-                                <img src="images/flyer2.jpg" alt="Flyer 2">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/flyer2.jpg">
+                                        <img src="images/optimized/flyer2-1236.webp"
+                                            srcset="images/optimized/flyer2-520.webp 520w, images/optimized/flyer2-1236.webp 1236w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1236" height="1731"
+                                            alt="Flyer 2" decoding="async" loading="lazy" data-alt-ru="Флаер 2">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Flyer 2</span><span data-language="ru" lang="ru">Флаер 2</span></figcaption>
+                                </figure>
                             </div>
                         </div>
                         <div class="main-parts">
                             <div class="menu-page1">
-                                <p class="part-name">Menu page 1</p>
-                                <img src="images/menu1.jpg" alt="Menu page 1">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/menu1.jpg">
+                                        <img src="images/optimized/menu1-1280.webp"
+                                            srcset="images/optimized/menu1-520.webp 520w, images/optimized/menu1-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1599"
+                                            alt="Menu page 1" decoding="async" loading="lazy" data-alt-ru="Страница меню 1">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Menu page 1</span><span data-language="ru" lang="ru">Страница меню 1</span></figcaption>
+                                </figure>
                             </div>
                             <div class="menu-page2">
-                                <p class="part-name">Menu page 2</p>
-                                <img src="images/menu2.jpg" alt="Menu page 2">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/menu2.jpg">
+                                        <img src="images/optimized/menu2-1280.webp"
+                                            srcset="images/optimized/menu2-520.webp 520w, images/optimized/menu2-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1597"
+                                            alt="Menu page 2" decoding="async" loading="lazy" data-alt-ru="Страница меню 2">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Menu page 2</span><span data-language="ru" lang="ru">Страница меню 2</span></figcaption>
+                                </figure>
                             </div>
                             <div class="menu-page3">
-                                <p class="part-name">Menu page 3</p>
-                                <img src="images/menu3.jpg" alt="Menu page 3">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/menu3.jpg">
+                                        <img src="images/optimized/menu3-1280.webp"
+                                            srcset="images/optimized/menu3-520.webp 520w, images/optimized/menu3-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1601"
+                                            alt="Menu page 3" decoding="async" loading="lazy" data-alt-ru="Страница меню 3">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Menu page 3</span><span data-language="ru" lang="ru">Страница меню 3</span></figcaption>
+                                </figure>
                             </div>
                             <div class="menu-page4">
-                                <p class="part-name">Menu page 4</p>
-                                <img src="images/menu4.jpg" alt="Menu page 4">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/menu4.jpg">
+                                        <img src="images/optimized/menu4-1280.webp"
+                                            srcset="images/optimized/menu4-520.webp 520w, images/optimized/menu4-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1597"
+                                            alt="Menu page 4" decoding="async" loading="lazy" data-alt-ru="Страница меню 4">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Menu page 4</span><span data-language="ru" lang="ru">Страница меню 4</span></figcaption>
+                                </figure>
                             </div>
                             <div class="menu-page5">
-                                <p class="part-name">Menu page 5</p>
-                                <img src="images/menu5.jpg" alt="Menu page 5">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/menu5.jpg">
+                                        <img src="images/optimized/menu5-1280.webp"
+                                            srcset="images/optimized/menu5-520.webp 520w, images/optimized/menu5-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1599"
+                                            alt="Menu page 5" decoding="async" loading="lazy" data-alt-ru="Страница меню 5">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Menu page 5</span><span data-language="ru" lang="ru">Страница меню 5</span></figcaption>
+                                </figure>
                             </div>
-                            <h3 class="internet-publications">Internet publications</h3>
+                            <h3 class="internet-publications"><span data-language="en" lang="en">Internet publications</span><span data-language="ru" lang="ru">Реклама в интернете</span></h3>
                             <div class="adv1">
-                                <p class="part-name">Advertising variation 1</p>
-                                <img src="images/adv1.jpg" alt="Advertising variation 1">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/adv1.jpg">
+                                        <img src="images/optimized/adv1-1280.webp"
+                                            srcset="images/optimized/adv1-520.webp 520w, images/optimized/adv1-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1280"
+                                            alt="Advertising variation 1" decoding="async" loading="lazy" data-alt-ru="Рекламный макет 1">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Advertising variation 1</span><span data-language="ru" lang="ru">Рекламный макет 1</span></figcaption>
+                                </figure>
                             </div>
                             <div class="adv2">
-                                <p class="part-name">Advertising variation 2</p>
-                                <img src="images/adv2.jpg" alt="Advertising variation 2">
+                                <figure class="media-figure">
+                                    <a class="media-link" href="images/adv2.jpg">
+                                        <img src="images/optimized/adv2-1280.webp"
+                                            srcset="images/optimized/adv2-520.webp 520w, images/optimized/adv2-1280.webp 1280w"
+                                            sizes="(max-width: 690px) calc(100vw - 40px), 46vw" width="1280" height="1280"
+                                            alt="Advertising variation 2" decoding="async" loading="lazy" data-alt-ru="Рекламный макет 2">
+                                        <span aria-hidden="true" class="media-expand">↗</span>
+                                    </a>
+                                    <figcaption><span data-language="en" lang="en">Advertising variation 2</span><span data-language="ru" lang="ru">Рекламный макет 2</span></figcaption>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -136,13 +241,33 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-info">
-                <a href="index.html" class="logo">
-                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+            <div class="footer-intro">
+                <h2><span data-language="en" lang="en">Let’s talk</span><span data-language="ru" lang="ru">Давайте обсудим проект</span></h2>
+                <p><span data-language="en" lang="en">Have a project in mind? Get in touch.</span><span data-language="ru" lang="ru">Расскажите о своей идее или задайте вопрос.</span></p>
+            </div>
+            <address class="contact-grid">
+                <a class="contact-card" href="mailto:elya206@icloud.com">
+                    <span class="contact-label"><span data-language="en" lang="en">Email</span><span data-language="ru" lang="ru">Почта</span></span>
+                    <span class="contact-value">elya206@icloud.com</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
                 </a>
-                <p>2026</p>
+                <a class="contact-card" href="https://t.me/g1ddmn">
+                    <span class="contact-label"><span data-language="en" lang="en">Telegram</span><span data-language="ru" lang="ru">Telegram</span></span>
+                    <span class="contact-value">@g1ddmn</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-card" href="tel:+79214184117">
+                    <span class="contact-label"><span data-language="en" lang="en">Phone</span><span data-language="ru" lang="ru">Телефон</span></span>
+                    <span class="contact-value">+7 (921) 418-41-17</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+            </address>
+            <div class="footer-info">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
+                <span class="footer-credit">© 2026 <span data-language="en" lang="en">Elvira Bocharova</span><span data-language="ru" lang="ru">Эльвира Бочарова</span></span>
+                <a class="back-to-top" href="#top"><span data-language="en" lang="en">Back to top</span><span data-language="ru" lang="ru">Наверх</span> <span aria-hidden="true">↑</span></a>
             </div>
         </div>
     </footer>

@@ -1,66 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@1..1000&display=swap" rel="stylesheet">
+    <title data-title-ru="Анимация велосипеда · Эльвира Бочарова">Bicycle animation · Elvira Bocharova</title>
+    <script src="js/lang.js"></script>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>bicycle animation</title>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="логотип сайта" class="logo-img">
-                </a>
-
+            <nav class="nav" aria-label="Main navigation" data-aria-ru="Основная навигация">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
                 <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#about" class="menu-link">about me</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#skills" class="menu-link">skills</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#education" class="menu-link">education</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#projects" class="menu-link">projects</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-link">contacts</a>
-                    </li>
+                    <li><a href="index.html#about" class="menu-link"><span data-language="en" lang="en">About</span><span data-language="ru" lang="ru">Обо мне</span></a></li>
+                    <li><a href="index.html#skills" class="menu-link"><span data-language="en" lang="en">Skills</span><span data-language="ru" lang="ru">Навыки</span></a></li>
+                    <li><a href="index.html#education" class="menu-link"><span data-language="en" lang="en">Education</span><span data-language="ru" lang="ru">Образование</span></a></li>
+                    <li><a href="index.html#projects" class="menu-link"><span data-language="en" lang="en">Projects</span><span data-language="ru" lang="ru">Проекты</span></a></li>
+                    <li><a href="#contacts" class="menu-link"><span data-language="en" lang="en">Contact</span><span data-language="ru" lang="ru">Контакты</span></a></li>
                 </ul>
+                <div class="site-settings" hidden>
+                    <div class="language-switch" role="group" aria-label="Language" data-aria-ru="Язык">
+                        <button type="button" data-set-language="ru" aria-label="Russian" data-aria-ru="Русский" aria-pressed="false">RU</button>
+                        <button type="button" data-set-language="en" aria-label="English" data-aria-ru="Английский" aria-pressed="true">EN</button>
+                    </div>
+                    <button type="button" class="theme-switch" data-theme-switch aria-label="Dark theme" data-aria-ru="Тёмная тема" aria-pressed="false">
+                        <span class="theme-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
-    <main class="main">
+    <main class="main case-main">
         <section class="about-project">
             <div class="container">
-                <div class="project-info">
-                    <h1 class="project-name">Bicycle animation</h1>
-                    <p>This project shows the way we can use Duik Angela plugin in Adobe After Effects to create interesting animations with bone-systems. (all animations are based on my vector art made in Adobe Illustrator!)</p>
-                </div>
-            </div>
-        </section>
-        <section class="stack">
-            <div class="container">
-                <div class="stack-info">
-                    <h1 class="title">Stack</h1>
-                    <p>Adobe After Effects, Duik Angela plugin, Adobe Illustrator</p>
+                <a class="back-link" href="index.html#projects"><span aria-hidden="true">←</span> <span data-language="en" lang="en">All projects</span><span data-language="ru" lang="ru">Все проекты</span></a>
+                <div class="case-intro">
+                    <div class="project-info">
+                        <h1 class="project-name"><span data-language="en" lang="en">Bicycle animation</span><span data-language="ru" lang="ru">Анимация велосипеда</span></h1>
+                        <p><span data-language="en" lang="en">I used the Duik Angela plug-in in Adobe After Effects to animate a bicycle with a skeletal rig. I drew the artwork in Adobe Illustrator.</span><span data-language="ru" lang="ru">Я нарисовала велосипед в Adobe Illustrator, а затем анимировала его в Adobe After Effects. Движение деталей настроила с помощью системы костей в плагине Duik Angela.</span></p>
+                    </div>
+                    <aside class="case-details">
+                        <dl class="case-meta">
+                            <div>
+                                <dt><span data-language="en" lang="en">Discipline</span><span data-language="ru" lang="ru">Направление</span></dt>
+                                <dd><span data-language="en" lang="en">Animation</span><span data-language="ru" lang="ru">Анимация</span></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Date</span><span data-language="ru" lang="ru">Дата</span></dt>
+                                <dd><time datetime="2026-06"><span data-language="en" lang="en">June 2026</span><span data-language="ru" lang="ru">Июнь 2026</span></time></dd>
+                            </div>
+                            <div>
+                                <dt><span data-language="en" lang="en">Tools</span><span data-language="ru" lang="ru">Инструменты</span></dt>
+                                <dd><span data-language="en" lang="en">Adobe After Effects, Duik Angela plugin, Adobe Illustrator</span><span data-language="ru" lang="ru">Adobe After Effects, плагин Duik Angela, Adobe Illustrator</span></dd>
+                            </div>
+                        </dl>
+                    </aside>
                 </div>
             </div>
         </section>
         <section class="project">
             <div class="container">
                 <div class="project1">
-                    <h1 class="title">Project</h1>
+                    <h2 class="gallery-title"><span data-language="en" lang="en">Animation</span><span data-language="ru" lang="ru">Анимация</span></h2>
                     <div class="project-video">
-                        <video controls width="100%">
+                        <video controls poster="images/optimized/bicycle-960.webp" width="960" height="1013" preload="none" playsinline>
                             <source src="videos/bicycle.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -68,13 +75,33 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-info">
-                <a href="index.html" class="logo">
-                <img src="images/logolight.svg" alt="логотип сайта" class="logo-img">
+            <div class="footer-intro">
+                <h2><span data-language="en" lang="en">Let’s talk</span><span data-language="ru" lang="ru">Давайте обсудим проект</span></h2>
+                <p><span data-language="en" lang="en">Have a project in mind? Get in touch.</span><span data-language="ru" lang="ru">Расскажите о своей идее или задайте вопрос.</span></p>
+            </div>
+            <address class="contact-grid">
+                <a class="contact-card" href="mailto:elya206@icloud.com">
+                    <span class="contact-label"><span data-language="en" lang="en">Email</span><span data-language="ru" lang="ru">Почта</span></span>
+                    <span class="contact-value">elya206@icloud.com</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
                 </a>
-                <p>2026</p>
+                <a class="contact-card" href="https://t.me/g1ddmn">
+                    <span class="contact-label"><span data-language="en" lang="en">Telegram</span><span data-language="ru" lang="ru">Telegram</span></span>
+                    <span class="contact-value">@g1ddmn</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-card" href="tel:+79214184117">
+                    <span class="contact-label"><span data-language="en" lang="en">Phone</span><span data-language="ru" lang="ru">Телефон</span></span>
+                    <span class="contact-value">+7 (921) 418-41-17</span>
+                    <span class="contact-arrow" aria-hidden="true">↗</span>
+                </a>
+            </address>
+            <div class="footer-info">
+                <a href="index.html" class="logo" aria-label="Elvira Bocharova" data-aria-ru="Эльвира Бочарова"><img src="images/logo.svg" class="logo-img logo-light" alt="" width="42" height="42"><img src="images/logolight.svg" class="logo-img logo-dark" alt="" width="42" height="42"></a>
+                <span class="footer-credit">© 2026 <span data-language="en" lang="en">Elvira Bocharova</span><span data-language="ru" lang="ru">Эльвира Бочарова</span></span>
+                <a class="back-to-top" href="#top"><span data-language="en" lang="en">Back to top</span><span data-language="ru" lang="ru">Наверх</span> <span aria-hidden="true">↑</span></a>
             </div>
         </div>
     </footer>
